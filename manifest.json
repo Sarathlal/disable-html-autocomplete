@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+
+    "name": "Disable auto suggestions in the form fields",
+    "version": "1.0.0",
+    "description": "Chrome extension to disable auto suggestions on the form fields in web pages. This is achived by setting 'autocomplete' attribute value as 'off' on all the form tags in the html page.",
+
+    "content_scripts": [{
+        "js": ["script.js"],
+        "matches": ["<all_urls>"]
+    }],
+
+    "permissions": [
+        "activeTab"
+    ],
+
+    "author": "Sarathlal N",
+    "homepage_url": "https://sarathlal.com"
+
+}
